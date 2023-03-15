@@ -1,0 +1,44 @@
+.heading {
+    font-family: 'Caveat', cursive;
+}
+
+.homepage-container {
+    display: flex;
+    justify-content: center;
+    margin: 4rem 2.5rem;
+
+    .homepage-text {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        justify-content: space-evenly;
+
+        font-family: 'Caveat', cursive;
+        font-size: 2rem;
+        line-height: 3.2rem;
+
+        padding: 4rem 0;
+    }
+
+    .homepage-wine {
+        max-width: 600px;
+    }
+}
+
+.cocktail {
+    flex-direction: row-reverse;
+
+    .cocktail-text {
+        gap: 0;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .homepage-container {
+        flex-direction: column-reverse;
+    }
+
+    .heading {
+        text-align: center;
+    }
+}
